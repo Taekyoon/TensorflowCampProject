@@ -17,8 +17,9 @@ To implement this idea, I am going to use GloVe for representing word data. This
 ## Project Plans
 This project aims to develop RCNN model for detecting fake news. Officially, this project will start on July 3rd, but until this camp starts, I can prepare for this project for 2 months. Therefore, the plan will separated into two parts; Before camp, During Camp. Before camp will plan for building more concrete backgrounds for development and During camp will plan for implementing Deep Learning models and measuring accuracy.
 ### Before camp
+When I am accepted to join in this camp, I will mostly prepare for building RCNN model with the paper, ["Text classifier with Recurrent Convolution Neural Network (RCNN)"](http://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/view/9745) because I have little background of this study. It will take about a month. Another month will work for finding reasons why CNN models had lower performance than RNN models. This research will help me to understand what matters can badly affect CNN model's performances and be hints for improving CNN models.
 ### During camp
-For 4 weeks, basically, I'm going to implement RCNN models and test for accuracy. While I work on this, I will do several works following this procedure.
+During 4 weeks, basically, I'm going to implement RCNN models and test for accuracy. While I work on this, I will do several works following this procedure.
 1. Text Preprocessing
 2. Word Representation Modeling
 3. Building RCNN models
