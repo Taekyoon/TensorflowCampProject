@@ -29,7 +29,7 @@ During 4 weeks, basically, I'm going to implement RCNN models and test for accur
 4. Deploying Models on Cloud Computer
 5. Testing and Measuring Model Performance
 
-From the followed list, the first and second procedure will work on first week. This first week will work on text processing for data clean and deciding window size and word dimensions for Word Embedding Modeling. During next two weeks, I am implementing the third and fourth procedures building RCNN Models on Cloud Computer. In this session, the models will be tuned and optimized in a better performance and deply on cloud computer. Until third week, when the deployment is finished, testing and measuring for model will be done.  
+From the followed list, the first and second procedure will work on first week. This first week will work on text processing for data clean and deciding window size and word dimensions for Word Embedding Modeling. During next two weeks, I am implementing the third and fourth procedures building RCNN Models on Cloud Computer. In this session, the models will be tuned and optimized in a better performance and deply on cloud computer. Until third week, when the deployment is finished, testing and measuring for model will be implemented.
 ## References
 * B.S Detection Application: https://github.com/selfagency/bs-detector
 * Mark Zuckerberg Source: https://www.facebook.com/zuck/posts/10103253901916271
