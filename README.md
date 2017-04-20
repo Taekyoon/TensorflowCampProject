@@ -18,6 +18,14 @@ To implement this idea, I am going to use GloVe for representing word data. This
 This project aims to develop RCNN model for detecting fake news. Officially, this project will start on July 3rd, but until this camp starts, I can prepare for this project for 2 months. Therefore, the plan will separated into two parts; Before camp, During Camp. Before camp will plan for building more concrete backgrounds for development and During camp will plan for implementing Deep Learning models and measuring accuracy.
 ### Before camp
 ### During camp
+For 4 weeks, basically, I'm going to implement RCNN models and test for accuracy. While I work on this, I will do several works following this procedure.
+1. Text Preprocessing
+2. Word Representation Modeling
+3. Building RCNN models
+4. Deploying Models on Cloud Computer
+5. Testing and Measuring Model Performance
+
+From the followed list, the first and second procedure will work on first week. This first week will work on text processing for data clean and deciding window size and word dimensions for Word Embedding Modeling. During next two weeks, I am implementing the third and fourth procedures building RCNN Models on Cloud Computer. In this session, the models will be tuned and optimized in a better performance and deply on cloud computer. Until third week, when the deployment is finished, testing and measuring for model will be done.  
 ## References
 * B.S Detection Application: https://github.com/selfagency/bs-detector
 * Mark Zuckerberg Source: https://www.facebook.com/zuck/posts/10103253901916271
