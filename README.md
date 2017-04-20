@@ -14,8 +14,11 @@ This table above is a result from Samir Bajaj's research, and it tells that most
 
 To implement this idea, I am going to use GloVe for representing word data. This library will help to build word embedding models. I will implement RCNN models which are the goal to improve CNN architectures. To compare the other models, I will use GRU, LSTM, BiLSTM models. Datasets will choose data from [B.S Detection (Bull Shit Detection) Application](https://github.com/selfagency/bs-detector), and I am going to use data from ["Getting Real about Fake News"](https://www.kaggle.com/mrisdal/fake-news) dataset from Kaggle as data source.
 
+## Project Effects
+This project will show that CNN architecture is competitive model for Natural Language Process (NLP). Some methods using in this project will be directions to develop CNN other than RNN in NLP research. Therefore, this effects will give researchers considering many choices to use Deep Learning models while working on NLP.
+
 ## Project Plans
-This project aims to develop RCNN model for detecting fake news. Officially, this project will start on July 3rd, but until this camp starts, I can prepare for this project for 2 months. Therefore, the plan will separated into two parts; Before camp, During Camp. Before camp will plan for building more concrete backgrounds for development and During camp will plan for implementing Deep Learning models and measuring accuracy.
+This project aims to develop RCNN model for detecting fake news. Officially, this project will start on July 3rd, but until this camp starts, I can prepare for this project for 2 months. Therefore, the plan will separated into two parts; Before camp, During Camp. Before camp will be a plan for building more concrete backgrounds for development and During camp will be a plan for implementing Deep Learning models and measuring accuracy.
 ### Before camp
 When I am accepted to join in this camp, I will mostly prepare for building RCNN model with the paper, ["Text classifier with Recurrent Convolution Neural Network (RCNN)"](http://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/view/9745) because I have little background of this study. It will take about a month. Another month will work for finding reasons why CNN models had lower performance than RNN models. This research will help me to understand what matters can badly affect CNN model's performances and be hints for improving CNN models.
 ### During camp
