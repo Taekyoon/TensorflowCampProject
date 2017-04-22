@@ -17,25 +17,25 @@ This table above is a result from Samir Bajaj's research, and it told that mostl
 From the Samir Bajaj's paper, the research with CNN model showed recall rates under 0.50, and one of these models showed 0.03 recall. Due to these lower recall values, lower F1 score and performance accuracy are caused. This problem can lead to the result that CNN models cannot be used for news detection.
 
 ### Project Solution
-In this project, firstly, data for training and testing will use the same data from Samir Bajaj's research, and word Embedding Model will be used as word representation. Next, I will develop fake news detector with Recurrent Convolutional Neural Network (RCNN) to increase CNN models' performance accuracy from Samir Bajaj's work. Lastly, to compare this suggested model, GRU, LSTM, and BiLSTM will be selected.
+In this project, firstly, data for training and testing will use the same data from Samir Bajaj's research, and word Embedding Model will be used as word representation. Next, I will develop fake news detector with Recurrent Convolutional Neural Network (RCNN) to increase CNN models' performance accuracy from Samir Bajaj's work. Lastly, to compare this suggested model, GRU, LSTM, and BiLSTM will be used as a control group.
 
 #### Data
-To make the same condition with Samir Bajaj's research, I am going to use dataset for fake news data from ["Getting Real about Fake News"](https://www.kaggle.com/mrisdal/fake-news) dataset which has 13,000 data in Kaggle. [Signal Media News dataset]() will be used as authentic news data which will be randomly extracted for 50,000 data. To determine fake news, binary 0/1 lable will assign. Those two dataset will be subsequently shuffled and separated into 3 parts which are training, validating, and testing. 60% of all the data will be used for training and each 20% of data will be used for validating and testing. The test set will not use for final evaluation.
+To make the same condition with Samir Bajaj's research, I am going to use dataset for fake news data from ["Getting Real about Fake News"](https://www.kaggle.com/mrisdal/fake-news) dataset which has 13,000 data in Kaggle. [Signal Media News dataset](http://research.signalmedia.co/newsir16/signal-dataset.html) will be used as authentic news data which will be randomly extracted for 50,000 data. To determine fake news, binary 0/1 lable will assign. Those two dataset will be subsequently shuffled and separated into 3 parts which are training, validating, and testing data. 60% of the data will be used for training and each 20% of data will be used for validating and testing. The test set will not use for final evaluation.
 
 #### Word Embedding Model
-In this project, I'm going to use skip-gram model for word embedding to make the same condition with RCNN research. Dimension of words will be emperically decided during experiments.
+In this project, I am going to use skip-gram model for word embedding to make the same condition with RCNN research. Dimension of words will be emperically decided during experiments.
 
 #### Recurrent Convolutional Neural Network
 To be satisfied with this project, Recurrent Convolutional Neural Network (RCNN) will be implemented. RCNN is a model to address difficulties on learning contextual information by CNN model which has fixed window size. It was proposed by Siwei Lai and Liheng Xu. To implement this model, it will be designed into two parts; Recurrent structure, Max pooling layer.
 
 ![alt text](https://github.com/Taekyoon/TensorflowCampProject/blob/master/RCNN%20Model.png?raw=true)
 
-Recurrent structure is a part for word representation learning. In this model, recurrent structure will be regarded as convolutional layer which works like RNN model. The structure applies bi-directional recurrent structure to capture contextual inforamtion. Each direction has context vector which stores contextual information near each words. The concatination of left-context, center-word, right-context yields latent sementic factors. which apply to Max pooling layer. This structure will give better ability to disambiguate meaning of words than CNN model by using contextual information. 
+Recurrent structure is a part for word representation learning. In this model, recurrent structure which works like RNN model will be regarded as convolutional layer. The structure applies bi-directional recurrent structure which has left context and right context to capture contextual inforamtion. Each direction has context vector which stores contextual information near each words. The concatination of left-context, center-word, right-context yields latent sementic factors. which apply to Max pooling layer. This structure will give better ability to disambiguate meaning of words than CNN model by using contextual information. 
 
 Max pooling layer works as text representation learning. Like any other CNN models, this model uses max pooling to select maximum feature value in a filter shape. The layer choose maximum value from output data of recurrent structure to find the most important latent sementic factors. This module can expect capturing entire text information. At the end of this layer, it will classify the data by applying softmax algorithm.
 
 #### Model Comparision
-The project model will be compared with RNN models. The reason I do this is that RNN models are the most widly used model in NLP research. If RCNN model can be competitive, this can mention that CNN models can have posibilities to improve performance as much as RNN can. Therefore, I will use advanced RNN models which are GRU, LSTM, and BiLSTM.
+The project model will be compared with RNN models. The reason I do this is that RNN models are the most widly used models in NLP research. If RCNN model can be competitive, this can mention that CNN models can have posibilities to improve performance as much as RNN can. Therefore, I will use advanced RNN models which are GRU, LSTM, and BiLSTM.
 
 ### Implementation
 This project will be implemented in Python 3.6 using Tensorflow 1.0, GloVe, and NumPy. Experiments will be work on local CPU-only machine and GPU-enabled cloud machine provided by Google.
