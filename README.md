@@ -28,7 +28,7 @@ In this project, I'm going to use skip-gram model for word embedding to make the
 #### Recurrent Convolutional Neural Network
 To be satisfied with this project, Recurrent Convolutional Neural Network (RCNN) will be implemented. RCNN is a model to address difficulties on learning contextual information by CNN model which has fixed window size. It was proposed by Siwei Lai and Liheng Xu. To implement this model, it will be designed into two parts; Recurrent structure, Max pooling layer.
 
-![alt text](https://github.com/Taekyoon/TensorflowCampProject/blob/Writing-about-RCNN/RCNN%20Model.png?raw=true)
+![alt text](https://github.com/Taekyoon/TensorflowCampProject/blob/master/RCNN%20Model.png?raw=true)
 
 Recurrent structure is a part for word representation learning. In this model, recurrent structure will be regarded as convolutional layer which works like RNN model. The structure applies bi-directional recurrent structure to capture contextual inforamtion. Each direction has context vector which stores contextual information near each words. The concatination of left-context, center-word, right-context yields latent sementic factors. which apply to Max pooling layer. This structure will give better ability to disambiguate meaning of words than CNN model by using contextual information. 
 
